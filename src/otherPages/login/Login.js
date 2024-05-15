@@ -96,7 +96,7 @@ const Login = () => {
 			} else if (err.response?.status === 401) {
 				setErrMsg('Unauthorized');
 			} else {
-				setErrMsg('Login Failed');
+				setErrMsg('Missing Username or Password');
 			}
 			errRef.current.focus();
 		}
@@ -113,7 +113,7 @@ const Login = () => {
           {errMsg}
         </Alert>
         )}
-        <h1>Sign In</h1>
+        <h1>Sign In - Smart Desk</h1>
         <form onSubmit={handleSubmit} className="form-group">
           <label htmlFor="username">Username:</label>
           <input

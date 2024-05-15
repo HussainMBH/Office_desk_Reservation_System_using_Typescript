@@ -121,7 +121,7 @@ function Diagram(props) {
           );
           const resp = response.data;
           // console.log('=====>resp', resp.successful);
-          setShowAlert('Row has been successfully saved!');
+          setShowAlert('Your Desk has been successfully booked!');
           setTimeout(()=>{setShowAlert(null);}, 2500);
       } catch (err) {
         console.log("ERROR save diagram", err);

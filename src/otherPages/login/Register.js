@@ -132,7 +132,7 @@ const Register = () => {
 					>
 						{errMsg}
 					</p>
-					<h1>Register Here</h1>
+					<h1>Register Here - Smart Desk</h1>
 					<form onSubmit={handleSubmit} className="form-group">
 						<label htmlFor="username">
 							Username:

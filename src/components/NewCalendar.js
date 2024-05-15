@@ -49,10 +49,7 @@ function mergeDateAndtime(date, time) {
 }
 
 export default function NewCalendar(props) {
-  /**
-   * https://shahabyazdi.github.io/react-multi-date-picker/other-examples/ 
-   */
-  
+ 
   const divStyle = {
     top: `${props.yPos - 125}px`
   };

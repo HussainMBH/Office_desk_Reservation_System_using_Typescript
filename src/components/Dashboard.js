@@ -35,7 +35,7 @@ export default function Dashboard() {
   return(
     <ElementStyle>
       <NavBar/>
-      <div className='ref-wrapper'>powered by <span>Desk Booking System</span></div>
+      <div className='ref-wrapper'>powered by <span>Smart Desk</span></div>
     </ElementStyle>
   )
 }

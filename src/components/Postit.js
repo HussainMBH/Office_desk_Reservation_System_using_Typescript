@@ -56,7 +56,7 @@ const Postit = () => {
     return (
 		<ElementStyle>
       <div className='post-it' >
-        <h1>Some notes</h1>
+        <h1>Some notes - Smart Desk</h1>
         <ul>
             <li>Just login in with user "user1". It is only a demo... No password :-)</li>
             <li>To access as admin, use user "admin0"</li>
