@@ -1,17 +1,17 @@
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { useContext, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser } from '@fortawesome/free-solid-svg-icons'
-import AuthContext from '../context/AuthProvider';
-import styled from 'styled-components';
+import Navbar from 'react-bootstrap/Navbar';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
+import styled from 'styled-components';
+import AuthContext from '../context/AuthProvider';
 import Diagram from './Diagram';
-import ReservationList from './ReservationList';
 import MyBooking from './MyBooking';
-import React, { useContext, useState, useEffect}  from 'react';
+import ReservationList from './ReservationList';
 
 
 const ElementStyle = styled.div`

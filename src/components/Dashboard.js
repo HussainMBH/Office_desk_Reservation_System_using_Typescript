@@ -1,8 +1,6 @@
-import React, { useContext, useState}  from 'react';
-import Diagram from './Diagram';
-import NavBar from './NavBar';
-import ReservationList from './ReservationList';
+import React, { useContext, useState } from 'react';
 import AuthContext from '../context/AuthProvider';
+import NavBar from './NavBar';
 
 import styled from 'styled-components';
 const ElementStyle = styled.div`

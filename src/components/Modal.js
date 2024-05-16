@@ -2,7 +2,7 @@ import BModal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 
 export default function Modal(props) {
-  const txt = `Do you really want delete the selected row?`
+  const txt = `Do you really want delete the selected desk?`
   return(
     <BModal show={props.idToDel?true:false}
       size= 'sm' centered='true'

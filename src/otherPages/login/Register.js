@@ -101,7 +101,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
   
-    if (!validName || !validPwd || !validMatch) {
+    if (!validName || !validPwd  ) {
       setErrMsg('Invalid Entry');
       return;
     }
@@ -192,27 +192,7 @@ const Register = () => {
               Allowed special characters: <span aria-label="exclamation mark">!</span> <span aria-label="at symbol">@</span> <span aria-label="hashtag">#</span> <span aria-label="dollar sign">$</span> <span aria-label="percent">%</span>
             </p>
   
-            <label htmlFor="confirm_pwd">
-              Confirm Password:
-              <FontAwesomeIcon icon={faCheck} className={validMatch && matchPwd ? 'valid' : 'hide'} />
-              <FontAwesomeIcon icon={faTimes} className={validMatch || !matchPwd ? 'hide' : 'invalid'} />
-            </label>
-            <input
-              type="password"
-              id="confirm_pwd"
-				onChange={(e) => setMatchPwd(e.target.value)}
-				value={matchPwd}
-				required
-				aria-invalid={validMatch ? 'false' : 'true'}
-				aria-describedby="confirmnote"
-				className="form-control"
-				onFocus={() => setMatchFocus(true)}
-				onBlur={() => setMatchFocus(false)}
-			  />
-			  <p id="confirmnote" className={matchFocus && !validMatch ? 'instructions' : 'offscreen'}>
-				<FontAwesomeIcon icon={faInfoCircle} />
-				Must match the first password input field.
-			  </p>
+            
   
 			  <label htmlFor="role">
 				Role:
@@ -222,7 +202,7 @@ const Register = () => {
 				<option value="admin">Admin</option>
 			  </select>
   
-			  <Button type="submit" disabled={!validName || !validPwd || !validMatch ? true : false}>Sign Up</Button>
+			  <Button type="submit" disabled={!validName || !validPwd   ? true : false}>Sign Up</Button>
 			</form>
 			<p>
 			  Already registered?<br />
