@@ -51,7 +51,7 @@ const Login = () => {
 	const [user, setUser] = useState('');
 	const [pwd, setPwd] = useState('');
 	const [errMsg, setErrMsg] = useState('');
-	const [success, setSuccess] = useState(false);
+	const [ setSuccess] = useState(false);
 
 	useEffect(() => {
 		userRef.current.focus();
@@ -148,7 +148,7 @@ const Login = () => {
       </section>
       <Postit/>
 
-      <img className="wrapper_gif"  src={require('./img2_readme.gif')} alt="Prototype video" />
+       
 		</ElementStyle>
 	);
 };

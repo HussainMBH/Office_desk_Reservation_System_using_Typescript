@@ -34,9 +34,9 @@ type Response = {
 
 const utils ={
   MSG: {
-    del: 'Row has been successfully deleted!',
-    add: 'Row has been successfully added!',
-    edit: 'Row has been successfully modified!'
+    del: 'Your Desk has been successfully deleted!',
+    add: 'Your Desk has been successfully added!',
+    edit: 'Your Desk has been successfully modified!'
   },
 
   timeToDecimal: function(t: string): number {
